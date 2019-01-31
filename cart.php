@@ -237,7 +237,7 @@ require_once('stripe-php/init.php');
 			console.log(sub);
 
 		  	var handler = StripeCheckout.configure({
-			  key: 'pk_live_91X2N7jiHuUp6fyHaydpxpGW',
+			  key: 'API_KEY',
 			  image: 'https://cdn2.iconfinder.com/data/icons/ecommerce-solid-icons-vol-2/64/082-512.png',
 			  locale: 'auto',
 			  
