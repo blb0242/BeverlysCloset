@@ -1,0 +1,156 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+/* -------------  CSS Loader  ----------- */
+
+.overlay{
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	z-index: 10;
+	opacity: 0.7;
+}
+.loader{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	border:10px solid #333;
+	position: relative;
+	margin: 0 auto;
+	top:30%;
+	animation:loader 2s linear infinite;
+}
+@keyframes loader{
+	50% {
+		opacity: 0.5;
+	}
+	100% {
+		transform:rotate(360deg);
+	}
+}
+.loader:after{
+	content: "";
+    width: 35px;
+    height: 35px;
+    background: #333;
+    position: absolute;
+    border-radius: 50%;
+    top: -20px;
+    left: 55px;
+}
+.loader:before{
+	content: "";
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #333;
+    position: absolute;
+    transform: rotate(-90deg);
+    top: -10px;
+    left: 39px;
+
+}
+
+/* --------- CSS Loader End Here ------------*/
+
+
+/* force scrollbar */
+html {
+	overflow-y: scroll;
+}
+
+
+.header{
+  width: 100%;
+  height: 110px;
+ 
+  background-color: #94618E;
+  
+}
+.header-title{
+  font-family: 'Dancing Script', cursive;
+  margin: 20px 20px 20px 20px;
+}
+
+.tabs .tab a {
+  color: #49274A !important;
+}
+
+.tabs .tab a:hover, .tabs .tab a.active {
+  background-color: #94618E !important;
+}
+
+
+#navbar {
+  background-color: #49274A;
+  z-index: 99;
+}
+
+.dropdown-trigger{
+  outline: none !important;
+}
+
+.add-to-cart {
+ background: #94618E !important;
+}
+
+.custom-footer {
+ background: #49274A !important;
+}
+
+.collection-item > .title {
+  color: #49274A;
+}
+
+.lighter-text {
+  color: #ABB0BE;
+}
+
+.main-color-text {
+  color: #6394F8;
+}
+
+
+  main {
+    flex: 1 0 auto;
+  }
+
+  body {
+    font: 14px/22px "Lato", Arial, sans-serif;
+    background-color: #F8EEE7;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+
+/* ---- grid ---- */
+
+.grid {
+	background: #DDD;
+}
+
+/* clear fix */
+.grid:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+.grid-sizer,
+.grid-item {
+	width: 33.333%;
+}
+
+.grid-item {
+	float: left;
+}
+
+.grid-item .card{
+	display: block;
+	width: 100%;
+}
