@@ -11,7 +11,7 @@ require_once('stripe-php/init.php');
 
 //check whether stripe token is not empty
 if(!empty($_POST['stripeToken'])) {
-  \Stripe\Stripe::setApiKey("sk_live_jYgZ6rUsgNb9hPzqcqgnxh7R");
+  \Stripe\Stripe::setApiKey("API_KEY");
     $statusMsg = "Success";
     //get token, card and user info from the form
     $token  = $_POST['stripeToken'];
@@ -23,7 +23,7 @@ if(!empty($_POST['stripeToken'])) {
     $runGetOrder = $con->query($getOrder);
 
         $i=0;
-        \Stripe\Stripe::setApiKey("sk_live_jYgZ6rUsgNb9hPzqcqgnxh7R");
+        \Stripe\Stripe::setApiKey("API_KEY");
         while ($row = $runGetOrder->fetch_assoc()) {
 
           //
